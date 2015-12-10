@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFC59C921C19641A005715FD /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC59C8F1C19617E005715FD /* libglfw3.a */; };
+		CFC59CBB1C196F40005715FD /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC59CBA1C196F40005715FD /* libGLEW.a */; };
+		CFEFF2B91C1947C80053BA2E /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFEFF2B61C1947C80053BA2E /* Window.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF2116111C193CDE000D49D6 /* libfungrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfungrame.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC59C8F1C19617E005715FD /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = glfw3/prebuilt/mac/libglfw3.a; sourceTree = "<group>"; };
+		CFC59CBA1C196F40005715FD /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = glew/prebuilt/mac/libGLEW.a; sourceTree = "<group>"; };
+		CFEFF2B61C1947C80053BA2E /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Window.cpp; path = ../fungame/graphic/Window.cpp; sourceTree = "<group>"; };
+		CFEFF2B71C1947C80053BA2E /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Window.h; path = ../fungame/graphic/Window.h; sourceTree = "<group>"; };
+		CFEFF2BB1C1947D30053BA2E /* fungame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fungame.h; path = ../fungame/fungame.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF21160E1C193CDE000D49D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC59CBB1C196F40005715FD /* libGLEW.a in Frameworks */,
+				CFC59C921C19641A005715FD /* libglfw3.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF2114DD1C19125D000D49D6 = {
+			isa = PBXGroup;
+			children = (
+				CFEFF2EF1C1959F70053BA2E /* Frameworks */,
+				CFEFF2BB1C1947D30053BA2E /* fungame.h */,
+				CFEFF2B51C1947C80053BA2E /* graphic */,
+				CFEFF2B81C1947C80053BA2E /* math */,
+				CF2115341C1915C1000D49D6 /* deps */,
+				CF2114E71C19125D000D49D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF2114E71C19125D000D49D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF2116111C193CDE000D49D6 /* libfungrame.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF2115341C1915C1000D49D6 /* deps */ = {
+			isa = PBXGroup;
+			children = (
+				CFC59CB81C196F26005715FD /* glew */,
+				CFEFF2F01C195A250053BA2E /* glfw3 */,
+			);
+			name = deps;
+			path = ../deps;
+			sourceTree = "<group>";
+		};
+		CFC59CB81C196F26005715FD /* glew */ = {
+			isa = PBXGroup;
+			children = (
+				CFC59CB91C196F2F005715FD /* lib */,
+			);
+			name = glew;
+			sourceTree = "<group>";
+		};
+		CFC59CB91C196F2F005715FD /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CFC59CBA1C196F40005715FD /* libGLEW.a */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		CFEFF2B51C1947C80053BA2E /* graphic */ = {
+			isa = PBXGroup;
+			children = (
+				CFEFF2B61C1947C80053BA2E /* Window.cpp */,
+				CFEFF2B71C1947C80053BA2E /* Window.h */,
+			);
+			name = graphic;
+			path = ../graphic;
+			sourceTree = "<group>";
+		};
+		CFEFF2B81C1947C80053BA2E /* math */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = math;
+			path = ../math;
+			sourceTree = "<group>";
+		};
+		CFEFF2EF1C1959F70053BA2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFEFF2F01C195A250053BA2E /* glfw3 */ = {
+			isa = PBXGroup;
+			children = (
+				CFEFF2F11C195A360053BA2E /* lib */,
+			);
+			name = glfw3;
+			sourceTree = "<group>";
+		};
+		CFEFF2F11C195A360053BA2E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CFC59C8F1C19617E005715FD /* libglfw3.a */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CF21160F1C193CDE000D49D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CF2116101C193CDE000D49D6 /* fungrame mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2116171C193CDE000D49D6 /* Build configuration list for PBXNativeTarget "fungrame mac" */;
+			buildPhases = (
+				CF21160D1C193CDE000D49D6 /* Sources */,
+				CF21160E1C193CDE000D49D6 /* Frameworks */,
+				CF21160F1C193CDE000D49D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "fungrame mac";
+			productName = fungrame_mac;
+			productReference = CF2116111C193CDE000D49D6 /* libfungrame.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF2114DE1C19125D000D49D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = com.zwf;
+				TargetAttributes = {
+					CF2116101C193CDE000D49D6 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = CF2114E11C19125D000D49D6 /* Build configuration list for PBXProject "fungame_libs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF2114DD1C19125D000D49D6;
+			productRefGroup = CF2114E71C19125D000D49D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF2116101C193CDE000D49D6 /* fungrame mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF21160D1C193CDE000D49D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFEFF2B91C1947C80053BA2E /* Window.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF2114EB1C19125D000D49D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CF2114EC1C19125D000D49D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CF2116181C193CDE000D49D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/..";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../deps/glfw3/prebuilt/mac\"",
+					"\"$(SRCROOT)/../deps/glew/prebuilt/mac\"",
+				);
+				OTHER_CFLAGS = "-fno-objc-arc";
+				PRODUCT_NAME = fungrame;
+			};
+			name = Debug;
+		};
+		CF2116191C193CDE000D49D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/..";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../deps/glfw3/prebuilt/mac\"",
+					"\"$(SRCROOT)/../deps/glew/prebuilt/mac\"",
+				);
+				OTHER_CFLAGS = "-fno-objc-arc";
+				PRODUCT_NAME = fungrame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF2114E11C19125D000D49D6 /* Build configuration list for PBXProject "fungame_libs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2114EB1C19125D000D49D6 /* Debug */,
+				CF2114EC1C19125D000D49D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2116171C193CDE000D49D6 /* Build configuration list for PBXNativeTarget "fungrame mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2116181C193CDE000D49D6 /* Debug */,
+				CF2116191C193CDE000D49D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF2114DE1C19125D000D49D6 /* Project object */;
+}
