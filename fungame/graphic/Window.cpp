@@ -7,13 +7,24 @@
 //
 
 #include <deps/glew/include/mac/glew.h>
-#include "Window.h"
+#include "fungame/graphic/Window.h"
 #include <iostream>
 
 namespace fungrame { namespace graphic {
-    
-    void windowResize(GLFWwindow *window, int width, int height) {
+
+    // window resize callback
+    void window_resize(GLFWwindow *window, int width, int height) {
         glViewport(0, 0, width, height);
+    }
+    
+    // key callback
+    void key_callback(GLFWwindow *window, int key, int scancode, int action, int mods) {
+        std::cout << "key: " << key << " scancode: " << scancode << " action: " << action << " mods: " << mods << std::endl;
+    }
+    
+    // cursor position callback
+    void cursor_position_callback(GLFWwindow *window, double xpos, double ypos) {
+        std::cout << "x : " << xpos << " y: " << ypos << std::endl;
     }
     
     Window::Window(const char *title, int width, int height) {
@@ -26,7 +37,6 @@ namespace fungrame { namespace graphic {
     }
 
     Window::~Window() {}
-    
     
     bool Window::init() {
         
@@ -43,8 +53,10 @@ namespace fungrame { namespace graphic {
         }
         
         glfwMakeContextCurrent(m_window);
-        
-        glfwSetWindowSizeCallback(m_window, windowResize);
+        glfwSetWindowUserPointer(m_window, this);
+        glfwSetWindowSizeCallback(m_window, window_resize); // execute window resize callback
+        glfwSetKeyCallback(m_window, key_callback); // execute key callback
+        glfwSetCursorPosCallback(m_window, cursor_position_callback); // execute mouse callback
         
         if(glewInit() != GLEW_OK) {
             std::cout << "Failed to init glew!" << std::endl;

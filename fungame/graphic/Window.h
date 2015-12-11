@@ -1,5 +1,5 @@
 //
-//  Window.hpp
+//  Window.h
 //  fungame
 //
 //  Created by zwf on 09/12/2015.
@@ -13,8 +13,13 @@
 #include <deps/glfw3/include/mac/glfw3.h>
 
 namespace fungrame { namespace graphic {
+
+#define MAX_KEYS    1024
+#define MAX_BUTTONS 32
     
-    void windowResize(GLFWwindow *window, int width, int height);
+    void window_resize(GLFWwindow *window, int width, int height);
+    void key_callback(GLFWwindow *window, int key, int scancode, int action, int mods);
+    void cursor_position_callback(GLFWwindow *window, double xpos, double ypos);
     
     class Window {
     private:
@@ -22,6 +27,10 @@ namespace fungrame { namespace graphic {
         int m_height;
         const char *m_title;
         GLFWwindow *m_window;
+        
+        static bool m_keys[MAX_KEYS];
+        static bool m_buttons[MAX_BUTTONS];
+        static double m_x, m_y;
     public:
         Window(const char *title, int width, int height);
         ~Window();

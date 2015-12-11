@@ -19,6 +19,11 @@ int main(int argc, const char * argv[]) {
     GLuint vao;
     glGenVertexArraysAPPLE(1, &vao);
     glBindVertexArrayAPPLE(vao);
+    
+    fungame::math::Vector2 v2(10, 18);
+    
+    std::cout << v2 << std::endl;
+    
 
     while (!window.closed()) {
         window.clear();
