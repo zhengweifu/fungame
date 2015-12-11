@@ -15,13 +15,13 @@
 namespace fungame { namespace math {
     class Vector2 {
     public:
-        double x;
-        double y;
+        float x;
+        float y;
         
     public:
         inline Vector2() : x(0), y(0) {}
         
-        inline Vector2(double _x, double _y): x(_x), y(_y) {}
+        inline Vector2(float _x, float _y): x(_x), y(_y) {}
         
         inline Vector2& copy(const Vector2 &v2);
         

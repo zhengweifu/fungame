@@ -15,6 +15,8 @@
 		CFC59CC51C1A9743005715FD /* FMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC59CBD1C1A72B2005715FD /* FMath.cpp */; };
 		CFC59CC81C1A9841005715FD /* Vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC59CC61C1A9841005715FD /* Vector3.cpp */; };
 		CFC59CC91C1A9841005715FD /* Vector3.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC59CC71C1A9841005715FD /* Vector3.h */; };
+		CFC59CCC1C1AA2C3005715FD /* Matrix4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFC59CCA1C1AA2C3005715FD /* Matrix4.cpp */; };
+		CFC59CCD1C1AA2C3005715FD /* Matrix4.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC59CCB1C1AA2C3005715FD /* Matrix4.h */; };
 		CFEFF2B91C1947C80053BA2E /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFEFF2B61C1947C80053BA2E /* Window.cpp */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		CFC59CC21C1A7B2C005715FD /* Vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector2.h; path = ../fungame/math/Vector2.h; sourceTree = "<group>"; };
 		CFC59CC61C1A9841005715FD /* Vector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vector3.cpp; path = ../fungame/math/Vector3.cpp; sourceTree = "<group>"; };
 		CFC59CC71C1A9841005715FD /* Vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vector3.h; path = ../fungame/math/Vector3.h; sourceTree = "<group>"; };
+		CFC59CCA1C1AA2C3005715FD /* Matrix4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Matrix4.cpp; path = ../fungame/math/Matrix4.cpp; sourceTree = "<group>"; };
+		CFC59CCB1C1AA2C3005715FD /* Matrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Matrix4.h; path = ../fungame/math/Matrix4.h; sourceTree = "<group>"; };
 		CFEFF2B61C1947C80053BA2E /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Window.cpp; path = ../fungame/graphic/Window.cpp; sourceTree = "<group>"; };
 		CFEFF2B71C1947C80053BA2E /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Window.h; path = ../fungame/graphic/Window.h; sourceTree = "<group>"; };
 		CFEFF2BB1C1947D30053BA2E /* fungame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fungame.h; path = ../fungame/fungame.h; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 				CFC59CBE1C1A72B2005715FD /* FMath.h */,
 				CFC59CC11C1A7B2C005715FD /* Vector2.cpp */,
 				CFC59CC21C1A7B2C005715FD /* Vector2.h */,
+				CFC59CCA1C1AA2C3005715FD /* Matrix4.cpp */,
+				CFC59CCB1C1AA2C3005715FD /* Matrix4.h */,
 			);
 			name = math;
 			path = ../math;
@@ -148,6 +154,7 @@
 			files = (
 				CFC59CC41C1A7B2C005715FD /* Vector2.h in Headers */,
 				CFC59CC01C1A72B2005715FD /* FMath.h in Headers */,
+				CFC59CCD1C1AA2C3005715FD /* Matrix4.h in Headers */,
 				CFC59CC91C1A9841005715FD /* Vector3.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +219,7 @@
 				CFEFF2B91C1947C80053BA2E /* Window.cpp in Sources */,
 				CFC59CC81C1A9841005715FD /* Vector3.cpp in Sources */,
 				CFC59CC31C1A7B2C005715FD /* Vector2.cpp in Sources */,
+				CFC59CCC1C1AA2C3005715FD /* Matrix4.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,6 +22,10 @@ int main(int argc, const char * argv[]) {
     
     fungame::math::Vector2 v2(10, 18);
     
+    fungame::math::Matrix4 m4;
+    
+    std::cout << m4 << std::endl;
+    
     std::cout << v2 << std::endl;
     
 

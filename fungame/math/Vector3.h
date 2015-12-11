@@ -13,16 +13,18 @@
 #include <ostream>
 
 namespace fungame { namespace math {
+    class Matrix4;
+    
     class Vector3 {
     public:
-        double x;
-        double y;
-        double z;
+        float x;
+        float y;
+        float z;
         
     public:
         inline Vector3() : x(0), y(0), z(0) {}
         
-        inline Vector3(double _x, double _y, double _z): x(_x), y(_y), z(_z) {}
+        inline Vector3(float _x, float _y, float _z): x(_x), y(_y), z(_z) {}
         
         inline Vector3& copy(const Vector3 &v3);
         
@@ -34,6 +36,7 @@ namespace fungame { namespace math {
         
         Vector3& divide(const Vector3 &v3);
         
+        Vector3& applyMatrix4(const Matrix4 &m4);
         
         friend std::ostream& operator<<(std::ostream &ostream, const Vector3 &v3);
         

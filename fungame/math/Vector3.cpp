@@ -7,6 +7,7 @@
 //
 
 #include "fungame/math/Vector3.h"
+#include "fungame/math/Matrix4.h"
 
 namespace fungame { namespace math {
     Vector3& Vector3::copy(const Vector3 &v3) {
@@ -45,6 +46,18 @@ namespace fungame { namespace math {
         x /= v3.x;
         y /= v3.y;
         z /= v3.z;
+        
+        return *this;
+    }
+    
+    Vector3& Vector3::applyMatrix4(const Matrix4 &m4) {
+        float _x = x, _y = y, _z = z;
+        
+        const auto &e = m4.elements;
+        
+        x = e[0] * _x + e[4] * _y + e[8] + _z + e[12];
+        y = e[1] * _x + e[5] * _y + e[9] + _z + e[13];
+        z = e[2] * _x + e[6] * _y + e[10] + _z + e[14];
         
         return *this;
     }
