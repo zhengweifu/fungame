@@ -6,8 +6,8 @@
 //  Copyright © 2015 com.zwf. All rights reserved.
 //
 
-#ifndef __WINDOW_H__
-#define __WINDOW_H__
+#ifndef __GRAPHIC_WINDOW_H__
+#define __GRAPHIC_WINDOW_H__
 
 #include <stdio.h>
 #include <GLFW/glfw3.h>
@@ -47,4 +47,4 @@ namespace fungrame { namespace graphic {
 }}
 
 
-#endif /* __WINDOW_H__ */
+#endif /* __GRAPHIC_WINDOW_H__ */

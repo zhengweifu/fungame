@@ -5,6 +5,8 @@
 
 // fungame::graphic
 #include <fungame/graphic/Window.h>
+#include <fungame/graphic/VBO.h>
+#include <fungame/graphic/Shader.h>
 
 
 // fungame::math
